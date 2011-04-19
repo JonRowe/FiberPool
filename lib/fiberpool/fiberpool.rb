@@ -1,4 +1,5 @@
 require 'fiber'
+
 class FiberPool
   attr_accessor :fibers, :pool_size, :pool_fiber
 
