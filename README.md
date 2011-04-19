@@ -10,6 +10,7 @@ Throttled to pool size. (default 10)
 Optional completion callback.
 
 e.g.
+
     EM.run do
       FiberPool.start(max_concurrency, pool_complete_callback) do |pool|
         pool.add do
