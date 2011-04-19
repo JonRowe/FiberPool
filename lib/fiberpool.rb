@@ -1,3 +1,1 @@
-module Fiberpool
-  # Your code goes here...
-end
+require 'fiberpool/fiberpool'
