@@ -1,3 +1,3 @@
-module FiberPool
+class FiberPool
   VERSION = "0.0.1"
 end
