@@ -1,0 +1,13 @@
+#!/bin/bash -lxe
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+rvm use 1.9.2@fiber-pool
+
+if [ `type -P bundle` ]
+then
+  echo "BUNDLER DETECTED"
+else
+  gem install bundler
+fi
+
+bundle install
+bundle exec rspec spec
