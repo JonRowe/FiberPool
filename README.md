@@ -1,4 +1,4 @@
-[Build Status](https://secure.travis-ci.org/JonRowe/FiberPool.png)](http://travis-ci.org/JonRowe/FiberPool)
+[[Build Status](https://secure.travis-ci.org/JonRowe/FiberPool.png)](http://travis-ci.org/JonRowe/FiberPool)
 FiberPool
 =========
 An implementation of a fiber pool that can be used to cooperatively
