@@ -4,7 +4,7 @@ describe FiberPool do
   let(:pool) { FiberPool.new }
 
   describe ".start" do
-    let(:fiber) { mock "fiber", :resume => nil }
+    let(:fiber) { mock "fiber", resume: nil }
 
     before do
       Fiber.stub(:new).and_return(fiber)
@@ -22,7 +22,7 @@ describe FiberPool do
     end
 
     context "within that fiber" do
-      let(:fake_pool) { mock "fake_pool", :drain => nil }
+      let(:fake_pool) { mock "fake_pool", drain: nil }
 
       before do
         Fiber.stub(:new).and_yield.and_return(fiber)
@@ -112,7 +112,7 @@ describe FiberPool do
 
   describe "#add_to_pool" do
     let(:completed_fiber) { mock "completed_fiber" }
-    let(:fiber) { mock "fiber", :resume => completed_fiber }
+    let(:fiber) { mock "fiber", resume: completed_fiber }
 
     subject { pool.add_to_pool fiber }
 
